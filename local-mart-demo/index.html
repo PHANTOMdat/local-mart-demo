@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skyline WebWorkers</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyline WebWorkers demo</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
+      background: #f4f6f9;
+      color: #333;
       text-align: center;
-      background: #f9f9f9;
     }
     header {
       background: #0a74da;
       color: white;
-      padding: 1rem;
-      font-size: 1.5rem;
+      padding: 1.5rem;
+      font-size: 1.8rem;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    header span.logo {
+      font-size: 2rem;
+    }
+    main {
+      padding: 2rem;
     }
     p {
-      margin-top: 2rem;
       font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
     button {
-      margin-top: 2rem;
       padding: 1rem 2rem;
       font-size: 1.2rem;
       background: #0a74da;
@@ -31,15 +41,28 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      transition: background 0.2s ease;
     }
     button:hover {
       background: #095ab5;
     }
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
-  <header>Skyline WebWorkers</header>
-  <p>Demo site for local marts 🚀</p>
-  <button>Order Online</button>
+  <header>
+    <span class="logo">🛒</span>
+    Skyline WebWorkers demo
+  </header>
+  <main>
+    <p>Welcome to our demo site for local marts 🚀</p>
+    <button>Order Online</button>
+  </main>
+  <footer>© 2025 Skyline WebWorkers. Demo only.</footer>
 </body>
 </html>
